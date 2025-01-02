@@ -40,6 +40,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
 
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"></script>
+
     <!-- Fancy Box CDN -->
     <script
       defer
@@ -182,14 +188,26 @@
               data-bs-target="#carousel-Indicators"
               data-bs-slide-to="1"
               aria-label="Slide 2"></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-Indicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
-                class="d-block w-100 banner1"
+                class="d-block w-100 banner0"
+                width="100%"
+                src="img/banners/desktop_banner0.jpg"
+                alt="Banner1" />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100 banner2"
                 width="100%"
                 src="img/banners/desktop_banner1.jpg"
-                alt="Banner1" />
+                alt="Banner2" />
             </div>
             <div class="carousel-item">
               <img
@@ -214,6 +232,48 @@
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- InfoBox -->
+        <div class="info-box text-center">
+          <span class="d-block info-status text-center effectGradient">
+            BOOK NOW
+          </span>
+          <span class="info-title d-block text-center section-heading">
+            Live Infinite
+          </span>
+          <span class="info-location d-block text-center">
+            AT ASHTE, PANVEL
+          </span>
+
+          <!-- Offer Colored Box -->
+
+          <!-- Offer Colored Box -->
+          <span class="d-block mb-1 text-capitalize of-box offer-bg-animation">
+            <span class="offer-text-outer">
+              <span class="offer-text">
+                Huge 25-Acre Township
+                <br />
+                35+ Lifestyle Indulgences
+                <br />
+                70% Open Green Spaces
+                <br />
+                3 BHK are Also Available
+                <br />
+              </span>
+            </span>
+          </span>
+          <span class="info-tag-line p-2">
+            1 & 2 BHK + Office Starting From
+          </span>
+          <span class="info-price pb-3">₹ 46 Lacs+Taxes* Onwards </span>
+
+          <button
+            class="pro-button effectMoveGradient"
+            data-bs-toggle="modal"
+            data-bs-target="#popupModal">
+            Download Brochure
           </button>
         </div>
       </section>
@@ -267,7 +327,7 @@
       <!-- Overview Section Ends -->
 
       <!-- Gallery -->
-      <section id="gallery_section" class="bg-body-tertiary">
+      <section id="gallery_section">
         <h2 class="section-heading text-center text-uppercase pt-3">Gallery</h2>
         <div class="container">
           <div class="amen-car">
@@ -397,10 +457,95 @@
             </div>
           </div>
         </div>
+
+        <div class="container py-5">
+          <h2 class="section-heading text-center text-uppercase pt-3">
+            Floor Plans
+          </h2>
+          <div class="row">
+            <div
+              class="col-md-4 mt-2"
+              data-bs-toggle="modal"
+              data-bs-target="#popupModal">
+              <a>
+                <!-- Image -->
+                <div class="overlay-container">
+                  <img
+                    class="img-fluid plan_img"
+                    src="img/plans/1bhk-320w.webp"
+                    alt=""
+                    width="100%" />
+                  <div class="overlay-slider-bottom"></div>
+                  <div
+                    class="overlay-slider-top d-flex justify-content-center align-items-center">
+                    <button class="btn btn-success text-white enq-btn">
+                      Enquire Now
+                    </button>
+                  </div>
+                </div>
+              </a>
+              <div class="at-property-dis effectGradient text-center p-1">
+                <h5>1 BHK</h5>
+              </div>
+            </div>
+            <!--  -->
+            <div
+              class="col-md-4 mt-2"
+              data-bs-toggle="modal"
+              data-bs-target="#popupModal">
+              <a>
+                <!-- Image -->
+                <div class="overlay-container">
+                  <img
+                    class="img-fluid plan_img"
+                    src="img/plans/2bhk-320w.webp"
+                    alt=""
+                    width="100%" />
+                  <div class="overlay-slider-bottom"></div>
+                  <div
+                    class="overlay-slider-top d-flex justify-content-center align-items-center">
+                    <button class="btn btn-success text-white enq-btn">
+                      Enquire Now
+                    </button>
+                  </div>
+                </div>
+              </a>
+              <div class="at-property-dis effectGradient text-center p-1">
+                <h5>2 BHK</h5>
+              </div>
+            </div>
+            <!--  -->
+            <div
+              class="col-md-4 mt-2"
+              data-bs-toggle="modal"
+              data-bs-target="#popupModal">
+              <a>
+                <!-- Image -->
+                <div class="overlay-container">
+                  <img
+                    class="img-fluid plan_img"
+                    src="img/plans/3bhk-320w.webp"
+                    alt=""
+                    width="100%" />
+                  <div class="overlay-slider-bottom"></div>
+                  <div
+                    class="overlay-slider-top d-flex justify-content-center align-items-center">
+                    <button class="btn btn-success text-white enq-btn">
+                      Enquire Now
+                    </button>
+                  </div>
+                </div>
+              </a>
+              <div class="at-property-dis effectGradient text-center p-1">
+                <h5>3 BHK</h5>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Amenities Section  -->
-      <section id="amenities_section" class="container py-4 bg-body-tertiary">
+      <section id="amenities_section" class="container py-4">
         <h2 class="section-heading text-center text-uppercase pt-3">
           amenities
         </h2>
@@ -575,6 +720,51 @@
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Section -->
+      <section id="virtual-tour" class="container p-4 shadow-sm">
+        <h2 class="section-heading text-center text-uppercase pt-3">
+          Virtual Site Tour
+        </h2>
+        <div class="container pt-2">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="container virtual-visit">
+                <div
+                  class="bg-image d-flex align-items-center text-white text-center">
+                  <div class="tour-img">
+                    <div class="overlay-info">
+                      <i
+                        class="fa-solid fa-circle-play play-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#popupModal"></i>
+                      <h3 class="fs-1">Virtual Visit</h3>
+                      <h5>Live Infinite AT ASHTE, PANVEL</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="container virtual-visit">
+                <div
+                  class="bg-image bg-image-1 d-flex align-items-center text-white text-center">
+                  <div class="tour-img">
+                    <div class="overlay-info">
+                      <i
+                        class="fa-solid fa-circle-play play-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#popupModal"></i>
+                      <h3 class="fs-1">Sample Flat</h3>
+                      <h5>Live Infinite AT ASHTE, PANVEL</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -808,18 +998,18 @@
       <ul class="nav nav-fill action-footer">
         <li class="nav-item ps-1">
           <a
-            data-bs-toggle="modal"
-            data-bs-target="#popupModal"
+            onclick="return gtag_report_conversion('https://wa.me/+910000000000 ');"
+            href="https://wa.me/+910000000000 "
             class="text-decoration-none text-white">
-            <i class="fa-brands fa-taxi nav-icon"> </i> Free Site Visit
+            <i class="fa-brands fa-whatsapp nav-icon"> </i> Whatsapp
           </a>
         </li>
         <li class="nav-item ps-1">
           <a
-            data-bs-toggle="modal"
-            data-bs-target="#popupModal"
+            onclick="return gtag_report_conversion('tel:+910000000000 ');"
+            href="tel:+910000000000 "
             class="text-decoration-none text-white">
-            <i class="fa-solid fa-phone me-2"></i> Call Back
+            <i class="fa-solid fa-phone me-2"></i> Call Us
           </a>
         </li>
 
@@ -853,12 +1043,10 @@
 
           <!-- Modal Body -->
           <div class="modal-body">
-            <div class="container text-center logo_back py-2">
-              <img src="img/logo/logo.svg" alt="" height="50px" />
+            <div class="container text-center">
+              <img src="img/logo/logo.svg" alt="" height="80px" />
+              <p class="mt-2">Register Here And Avail The Best Offers!!</p>
             </div>
-            <h5 class="mt-2 text-center">
-              Register Here And Avail The Best Offers!!
-            </h5>
             <div class="container">
               <!--Enquire Form  -->
               <div class="enquire-section">
@@ -877,7 +1065,7 @@
                         class="form-control inputStyle shadow-none"
                         name="user_name"
                         id="user_name_modal"
-                        placeholder="Name"
+                        placeholder="Name *"
                         autocomplete="off"
                         required />
                     </div>
@@ -904,8 +1092,10 @@
                         class="form-control inputStyle shadow-none"
                         name="contact_number"
                         id="contact_number_modal"
+                        minlength="10"
+                        maxlength="10"
                         pattern="[0-9]{10}"
-                        placeholder="Phone Number"
+                        placeholder="Phone Number *"
                         oninvalid="setCustomValidity('Please enter a valid phone number. e.g., 12345-67890')"
                         oninput="setCustomValidity('')"
                         required />
