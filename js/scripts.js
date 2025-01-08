@@ -48,3 +48,10 @@ $(document).ready(function () {
   // Show the carousel after it's initialized
   $(".owl-carousel").css("display", "block");
 });
+
+// Popup Auto
+$(window).ready(function () {
+  setTimeout(function () {
+    $("#popupModal").modal("show");
+  }, 3000);
+});

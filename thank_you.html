@@ -5,6 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maximus City</title>
 
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-11547669967"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-11547669967");
+    </script>
+    <!-- Event snippet for Maximus City Lead Form Submission conversion page -->
+    <script>
+      gtag("event", "conversion", {
+        send_to: "AW-11547669967/73WVCI67iYIaEM_rrYIr",
+      });
+    </script>
+
+    <!-- Event snippet for Maximus City WhatsApp Lead conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-11547669967/f45eCJLI-YEaEM_rrYIr",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
+
+    <!-- Event snippet for Maximus City Call from Website conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-11547669967/ax-YCJTaioIaEM_rrYIr",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
     <!-- SEO -->
     <meta property="og:title" content="Maximus City" />
     <meta
@@ -67,7 +119,7 @@
     <!-- Custom CSS & JS  -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/common.css" />
-    <script defer src="js/script.js"></script>
+    <script defer src="js/scripts.js"></script>
   </head>
   <body
     data-bs-spy="scroll"
