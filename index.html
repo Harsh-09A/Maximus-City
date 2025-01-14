@@ -378,7 +378,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       </section>
       <!-- Overview Section Ends -->
 
-      <!-- Gallery -->
+      <!-- Gallery Section -->
       <section id="gallery_section">
         <h2 class="section-heading text-center text-uppercase pt-3">Gallery</h2>
         <div class="container">
@@ -434,8 +434,9 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           </div>
         </div>
       </section>
+      <!-- Gallery Section Ends -->
 
-      <!-- Configuration -->
+      <!-- Configuration Section -->
       <section id="configuration_section">
         <div class="features-overlay">
           <div class="container">
@@ -595,6 +596,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           </div>
         </div>
       </section>
+      <!-- Configuration Section Ends -->
 
       <!-- Amenities Section  -->
       <section id="amenities_section" class="container py-4">
@@ -721,7 +723,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       </section>
       <!-- Amenities Section Ends -->
 
-      <!-- location -->
+      <!-- Location Section -->
       <section id="location_section">
         <h2 class="section-heading text-center text-uppercase pt-3">
           Location
@@ -776,7 +778,9 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           </div>
         </div>
       </section>
-      <!-- About Section -->
+      <!-- Location Section Ends -->
+
+      <!-- Virtual Tour Section -->
       <section id="virtual-tour" class="container p-4 shadow-sm">
         <h2 class="section-heading text-center text-uppercase pt-3">
           Virtual Site Tour
@@ -821,6 +825,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           </div>
         </div>
       </section>
+      <!-- Virtual Tour Section Ends -->
 
       <!-- About Section -->
       <section id="about_section" class="container-fluid p-4 mt-3">
@@ -951,6 +956,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           </div>
         </div>
       </section>
+      <!-- About Section Ends -->
     </main>
 
     <!-- Footer -->
@@ -984,23 +990,21 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 Project Registered under Government of India RERA Act 2016
               </li>
               <li>RERA Registration No - P52000066491</li>
-              <!--<li>MAHA RERA Project Registration No.: </li>-->
+              <li>Government RERA Authorised Advertiser's:- CAPITAL HOME</li>
+              <li>RERA Agent Registration No:- A52000022821</li>
               <li>
                 <b>Site Address:</b> Maximus City - Site Sales Office, Ashte,
                 Panvel, District - Raigad 410221
               </li>
-              <!-- <li>
-                <b>Contact Us:</b> Corporate Office: 409,The Landmark, Plot No
-                26A, Sector - 7, Near Hiranandani, Kharghar, Navi Mumbai –
-                410210.
-              </li> -->
             </ul>
           </small>
         </div>
         <div>
           <div>
             <span>
-              Disclaimer : The information provided on this website is intended
+              Disclaimer :This website is managed by Capital Home. Our Rera No.
+              is A52000022821. We are an authorised marketing partner for this
+              project. The information provided on this website is intended
               exclusively for informational purposes. This Website Is Not An
               Official Site And It Belongs To The Authorized Marketing Partner.
               All rights reserved. The content, design, and information on this
@@ -1025,7 +1029,12 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               Read More
             </span>
           </div>
-
+          <div>
+            <p>
+              <strong>Contact Us at:</strong> Hiranandani Crystal
+              Plaza,Kharghar, Navi Mumbai , 410210
+            </p>
+          </div>
           <p class="pb-4 pt-2">
             <a
               href="privacy_policy.html"
@@ -1044,27 +1053,27 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         </div>
       </div>
     </footer>
+    <!-- Footer Ends -->
 
     <!-- Mobile Footer Fixed Button -->
     <div class="container-fluid fixed-bottom action-footer-container">
       <ul class="nav nav-fill action-footer">
-        <li class="nav-item ps-1">
-          <a
-            onclick="return gtag_report_conversion('https://wa.me/+919321140032');"
-            href="https://wa.me/+919321140032"
-            class="text-decoration-none text-white">
-            <i class="fa-brands fa-whatsapp nav-icon"> </i> Whatsapp
+        <li
+          class="nav-item ps-1"
+          data-bs-toggle="modal"
+          data-bs-target="#popupModal">
+          <a class="text-decoration-none text-white">
+            <i class="fa-solid fa-taxi nav-icon"> </i> Site Visit
           </a>
         </li>
-        <li class="nav-item ps-1">
-          <a
-            onclick="return gtag_report_conversion('tel:+919321140032');"
-            href="tel:+919321140032"
-            class="text-decoration-none text-white">
-            <i class="fa-solid fa-phone me-2"></i> Call Us
+        <li
+          class="nav-item ps-1"
+          data-bs-toggle="modal"
+          data-bs-target="#popupModal">
+          <a class="text-decoration-none text-white">
+            <i class="fa-solid fa-phone me-2"></i> Call Back
           </a>
         </li>
-
         <li
           class="nav-item"
           data-bs-toggle="modal"
@@ -1073,6 +1082,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         </li>
       </ul>
     </div>
+    <!-- Mobile Footer Fixed Button Ends -->
 
     <!-- Modal -->
     <div
@@ -1198,5 +1208,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         </div>
       </div>
     </div>
+    <!-- Modal Ends -->
   </body>
 </html>
